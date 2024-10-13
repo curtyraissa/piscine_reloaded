@@ -1,0 +1,69 @@
+Ex00
+
+# Criar link simbolico
+ln -s test0 test6
+
+hard links nos arquivos test3 e test5 ??
+
+# Comandos truncate
+truncate -s 4 test1
+truncate -s 1 test3
+truncate -s 2 test4
+truncate -s 1 test5
+
+# Ajustando as datas e horas dos arquivos
+touch -t 06012047 test0
+touch -t 06012146 test1
+touch -t 06012245 test2
+touch -t 06012344 test3
+touch -t 06012343 test4
+touch -t 06012344 test5
+touch -h -t 06012220 test6
+
+# Comandos chmod
+chmod 715 test0
+chmod 714 test1
+chmod 504 test2
+chmod 404 test3
+chmod 641 test4
+chmod 404 test5
+chmod 755 test6
+
+
+Ex01
+echo -e "Z\n" > z
+
+
+Ex02
+ex08
+find . \( -name "*~" -o -name "#*#" \) -type f -print -delete
+encontra tudo que tem no dir atual
+que tenha nome ~ e #
+pega so files
+mostra
+deleta
+
+Ex03
+#!/bin/sh
+find -type f -name "*sh" -exec basename{} .sh\;
+find pesquisa a partir do diretorio atual
+-type f restringe a busca a apenas arquivos
+-exec é uma opção do comando find que permite executar um comando em cada arquivo encontrado que corresponda aos critérios de busca
+basename remover a extensão .sh
+\; indica ao find que o exec terminou
+
+Ex04
+#!/bin/sh
+ifconfig | grep ether | cut -d ' ' -f10
+ifconfig: Exibe as configurações das interfaces de rede na sua máquina, incluindo os endereços MAC.
+
+grep ether: Filtra a saída do ifconfig para mostrar apenas as linhas que contêm a palavra ether, que é onde o ifconfig geralmente exibe o endereço MAC.
+
+    cut: Comando usado para dividir a saída em partes.
+    -d ' ': Define o delimitador como um espaço (' '), dividindo a linha em campos.
+    -f10: Seleciona o décimo campo, que é onde o endereço MAC está localizado na linha resultante.
+    
+Ex05
+antes de " \ $ precisa de uma \ para entender como literal
+echo "42" > "...." 
+Truncate -s 2 *waM*
