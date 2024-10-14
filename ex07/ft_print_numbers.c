@@ -1,15 +1,27 @@
-void    ft_putchar(char c);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcurty-g <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/14 12:29:09 by rcurty-g          #+#    #+#             */
+/*   Updated: 2024/10/14 12:34:37 by rcurty-g         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    ft_print_numbers(void)
+void	ft_putchar(char c);
+
+void	ft_print_numbers(void)
 {
-    char i;
+	char	i;
 
-    i = 48;
-    while(i <= 57)
-    {
-        ft_putchar(i);
-        i++;
-    }
+	i = 48;
+	while (i <= 57)
+	{
+		ft_putchar(i);
+		i++;
+	}
 }
 
 /*

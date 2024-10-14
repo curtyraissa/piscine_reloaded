@@ -1,15 +1,27 @@
-void    ft_putchar(char c);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rcurty-g <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/14 12:20:05 by rcurty-g          #+#    #+#             */
+/*   Updated: 2024/10/14 12:28:30 by rcurty-g         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    ft_print_alphabet(void)
+void	ft_putchar(char c);
+
+void	ft_print_alphabet(void)
 {
-    char i;
+	char	i;
 
-    i = 97;
-    while(i <= 122)
-    {
-        ft_putchar(i);
-        i++;
-    }
+	i = 97;
+	while (i <= 122)
+	{
+		ft_putchar(i);
+		i++;
+	}
 }
 
 /*
